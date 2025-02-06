@@ -16,7 +16,7 @@ export default function PostPage({ title, contentHtml, description, date, tags }
     <main>
       <h1>{title}</h1>
       <p>{formattedDate}</p>
-      {description && <p>{description}</p>}
+      {description && <p className="lead">{description}</p>}
       {tags && tags.length > 0 && (
         <ul>
           {tags.map((tag: string) => (
@@ -43,7 +43,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = await getPostBySlug(params?.slug as string);
   if (!post) {
-    return { notFound: true }; // Return 404 if post is not found
+    return { notFound: true };
   }
   return {
     props: post

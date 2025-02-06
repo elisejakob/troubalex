@@ -1,1 +1,43 @@
 // fonts
+
+@font-face {
+  font-family: 'Make Way';
+  src: url('/assets/fonts/MakeWayTrial-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Make Way';
+  src: url('/assets/fonts/MakeWayTrial-RegularItalic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Make Way';
+  src: url('/assets/fonts/MakeWayTrial-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Make Way';
+  src: url('/assets/fonts/MakeWayTrial-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Make Way';
+  src: url('/assets/fonts/MakeWayTrial-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Make Way';
+  src: url('/assets/fonts/MakeWayTrial-Black.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 800;
+}

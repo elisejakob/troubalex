@@ -1,5 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { PostHeader } from "@/components/post/PostHeader";
+import { PostContent } from "@/components/post/PostContent";
 
 type PostProps = {
   title: string;
@@ -14,9 +16,7 @@ export default function PostPage({ title, contentHtml, description, date, tags }
 
   return (
     <main>
-      <h1>{title}</h1>
-      <p>{formattedDate}</p>
-      {description && <p className="lead">{description}</p>}
+      <PostHeader title={title} lead={description} date={date} />
       {tags && tags.length > 0 && (
         <ul>
           {tags.map((tag: string) => (
@@ -24,7 +24,7 @@ export default function PostPage({ title, contentHtml, description, date, tags }
           ))}
         </ul>
       )}
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <PostContent content={contentHtml} />
     </main>
   );
 }

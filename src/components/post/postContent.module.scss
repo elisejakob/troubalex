@@ -1,0 +1,47 @@
+.postContent {
+  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline) calc(var(--spacing-sitepadding-block)*4); 
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.5em auto .6em;
+    max-width: var(--size-width-p);
+  }
+
+  p, ul, ol {
+    margin: 0 auto 1rem;
+    max-width: var(--size-width-p);
+  }
+
+  p {
+    &:first-child {
+      &:first-letter {
+        color: var(--color-details);
+        float: left;
+        font-size: 5rem;
+        line-height: 3rem;
+        padding-top: .8rem;
+        padding-right: .5rem;
+        padding-left: 0;
+      }
+    }
+  }
+
+  ul, ol {
+    padding-left: 2rem;
+
+    li {
+      &::marker {
+        color: var(--color-details);
+      }
+    }
+  }
+
+  pre {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-mini);
+    padding: var(--spacing-sitepadding-block);
+    background: #ddd;
+    margin: 2em 0;
+    overflow-x: auto;
+    
+  }
+}

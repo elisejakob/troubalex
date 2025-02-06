@@ -8,19 +8,36 @@
   --color-text: #181818;
   --color-background: #eee;
   --color-hover: teal;
+  --color-details: hotpink;
 
-  // sizes
-  --root-size: 20px;
+  // font sizes
+  --root-size: 16px;
   --font-size-body: 1rem;
   --font-size-lead: 1.4rem;
-  --font-size-meta: .8rem;
+  --font-size-mini: .8rem;
   --font-size-h1: 2.4rem;
 
-  // spacing
-  --spacing-sitepadding-inline: 4rem;
+  // layout sizes
+  --size-width-p: 32rem;
+  --size-width-lead: 32em;
 
+  // spacing
+  --spacing-sitepadding-block: 1rem;
+  --spacing-sitepadding-inline: 1.4rem;
+
+  // type details
+  --letter-spacing: 0.04em;
 
   // animation & transitions
   --transition-duration: .2s;
   --transition-easing: ease;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --root-size: 20px;
+
+    --spacing-sitepadding-block: 2rem;
+    --spacing-sitepadding-inline: 4rem;
+  }
 }

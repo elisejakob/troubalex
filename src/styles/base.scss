@@ -19,17 +19,16 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-main);
-  line-height: 1.4;
+  line-height: 1.5;
   transition: background .3s ease-out;
 }
 
 main {
-  padding: var(--spacing-sitepadding-inline);
   min-height: 80vh;
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
 }
@@ -51,8 +50,11 @@ a {
 }
 
 p {
-  max-width: 32em;
+  margin: 0 auto 1rem;
+  max-width: var(--size-width-p);
   &.lead {
+    margin: 0;
     font-size: var(--font-size-lead);
+    max-width: var(--size-width-lead);
   }
 }

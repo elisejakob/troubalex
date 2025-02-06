@@ -2,16 +2,16 @@ import { GetStaticProps } from "next";
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
 
-type HomeProps = {
+type ArchiveProps = {
   posts: { slug: string; title: string }[];
 };
 
-export default function Home({ posts }: HomeProps) {
+export default function Posts({ posts }: ArchiveProps) {
   return (
     <main>
-      <h1>Home page</h1>
+      <h1>All posts</h1>
       <ul>
-        {posts.slice(0, 6).map((post) => (
+        {posts.map((post) => (
           <li key={post.slug}>
             <Link href={`/posts/${post.slug}`}>{post.title}</Link>
           </li>

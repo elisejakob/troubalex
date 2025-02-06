@@ -1,3 +1,5 @@
 .footer {
   background: teal;
+  padding: var(--spacing-sitepadding-inline);
+  min-height: 60dvh;
 }

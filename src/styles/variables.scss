@@ -1,0 +1,26 @@
+:root {
+  // fonts
+  --font-main: serif;
+  --font-heading: serif;
+  --font-details: sans-serif;
+
+  // colors
+  --color-text: #181818;
+  --color-background: #eee;
+  --color-hover: teal;
+
+  // sizes
+  --root-size: 20px;
+  --font-size-body: 1rem;
+  --font-size-lead: 1.4rem;
+  --font-size-meta: .8rem;
+  --font-size-h1: 2.4rem;
+
+  // spacing
+  --spacing-sitepadding-inline: 4rem;
+
+
+  // animation & transitions
+  --transition-duration: .2s;
+  --transition-easing: ease;
+}

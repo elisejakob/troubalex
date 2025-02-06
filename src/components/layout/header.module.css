@@ -1,6 +1,8 @@
 .header {
+  padding: 1rem var(--spacing-sitepadding-inline);
   display: flex;
   justify-content: space-between;
+  background: teal;
 }
 
 .menu {

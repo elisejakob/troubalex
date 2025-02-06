@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--root-size);
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.4;
+  transition: background .3s ease-out;
+}
+
+main {
+  padding: var(--spacing-sitepadding-inline);
+  min-height: 80vh;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .16em;
+  text-decoration-thickness: .08em;
+  transition: color var(--transition-duration) var(--transition-easing);
+
+  &:hover {
+    color: var(--color-hover);
+  }
+}
+
+p {
+  max-width: 32em;
+  &.lead {
+    font-size: var(--font-size-lead);
+  }
+}

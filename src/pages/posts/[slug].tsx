@@ -24,7 +24,7 @@ export default function PostPage({ title, contentHtml, description, date, tags }
           ))}
         </ul>
       )}
-      <article dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </main>
   );
 }

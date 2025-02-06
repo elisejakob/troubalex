@@ -1,0 +1,8 @@
+---
+title: 'On The Road Again'
+date: 2009-03-31
+draft: false
+tags: ['exhibition', 'FOSS', 'KDE', 'KDE', 'openexpo', 'train', 'travel']
+---
+
+Thanks to the German Bahn, I gained an hour offline in a train. All my tasks I could finish without the internet are done now, so I thought to myself I could as well blog something. I squeezed myself into the ICE to Basel SBB with a incredibly heavy suitcase, a backpack, a cardboard roll holding posters and my handbag. A whole hour later than planned because of severe stupidness on my side. This turned out to be extra annoying when shortly before Siegburg the train stopped before a no longer working switch. We had to travel back nearly all the way to Cologne main station and slowly. Hence the gained hour. I am on my way to attend the OpenExpo in Bern where I will give a presentation and back up Luca and Eckhart at the KDE booth. Claudia sent me the posters and some T-shirts and thanks to a quick reaction from Novell I now have 200 something openSUSE DVDs in my small suitcase. The latter gives me funny looks since a suitcase of that size is not expected to be heavy. Believe me - this one is! I am looking forward to put on my KDE hat again and meet with all the nice Swiss FOSS folks in Bern tomorrow. But first I want food and a bed. The initial train by the way actually never made it to Basel and my extra hour quickly evolved into one and a half hours but that's another story.

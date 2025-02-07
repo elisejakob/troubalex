@@ -1,14 +1,31 @@
 .postHeader {
-  padding: var(--spacing-sitepadding-inline);
-  background: rgb(193, 222, 222);
+  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline);
+  background: var(--color-background-secondary);
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-family: var(--font-details);
   font-size: var(--font-size-mini);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing);
+}
+
+.tags {
+  display: inline-flex;
+  gap: .4rem;
+  list-style: none;
+}
+
+.tag {
+  font-family: var(--font-details);
+  padding: 0 .4rem;
+  line-height: 2;
+  background: var(--color-details-light);
+  border-radius: var(--border-radius-tag);
 }

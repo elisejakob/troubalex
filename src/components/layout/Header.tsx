@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/">
-        Title
+        <strong>Title</strong>
       </Link>
       <nav className={styles.menu}>
         <ul>

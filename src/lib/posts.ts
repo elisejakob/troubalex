@@ -50,6 +50,29 @@ export function getAllPosts(): PostMetadata[] {
   return posts;
 }
 
+
+// detect vimeo/twitter and create embeds
+const vimeoRegex = /https:\/\/vimeo.com\/(\d+)/;
+const youtubeRegex = /https?:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]+)/;
+const twitterRegex = /https:\/\/twitter.com\/[a-zA-Z0-9_]+\/status\/(\d+)/;
+
+function processEmbeds(content: string) {
+  // vimeo
+  content = content.replace(vimeoRegex, (match, videoId) => {
+    return `<div class="embed embed-vimeo"><iframe src="https://player.vimeo.com/video/${videoId}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`;
+  });
+  // youtube
+  content = content.replace(youtubeRegex, (match, videoId) => {
+    return `<div class="embed embed-youtube"><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+  });
+  // twitter
+  content = content.replace(twitterRegex, (match, tweetId) => {
+    return `<div class="embed embed-twitter"><blockquote class="twitter-tweet"><a href="https://twitter.com/twitter/statuses/${tweetId}"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>`;
+  });
+
+  return content;
+}
+
 export async function getPostBySlug(slug: string): Promise<Post> {
   const filePath = path.join(postsDirectory, `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf8");
@@ -58,8 +81,10 @@ export async function getPostBySlug(slug: string): Promise<Post> {
 
   const permalink = data.permalink || `/${slug}`;
 
-  const processedContent = await remark().use(html).process(content);
-  const contentHtml = processedContent.toString();
+  const processedContent = await remark().use(html, { sanitize: false }).process(content);
+  let contentHtml = processedContent.toString();
+  contentHtml = processEmbeds(contentHtml);
+
   const serializedDate = data.date instanceof Date ? data.date.toISOString() : data.date;
 
   return {

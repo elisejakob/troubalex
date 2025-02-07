@@ -16,14 +16,7 @@ export default function PostPage({ title, contentHtml, description, date, tags }
 
   return (
     <main>
-      <PostHeader title={title} lead={description} date={date} />
-      {tags && tags.length > 0 && (
-        <ul>
-          {tags.map((tag: string) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-      )}
+      <PostHeader title={title} lead={description} date={date} tags={tags} />
       <PostContent content={contentHtml} />
     </main>
   );

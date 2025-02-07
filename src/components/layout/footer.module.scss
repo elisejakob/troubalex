@@ -1,5 +1,8 @@
 .footer {
-  background: teal;
-  padding: var(--spacing-sitepadding-inline);
+  background: var(--color-background-layout);
+  color: var(--color-text-layout);
+  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline);
   min-height: 60dvh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

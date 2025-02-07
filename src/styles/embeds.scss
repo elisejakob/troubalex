@@ -1,0 +1,17 @@
+.embed {
+  max-width: var(--max-width-p);
+  margin: 0 auto;
+  &-vimeo, &-youtube {
+    iframe, video {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+    }
+  }
+  &-twitter {
+    blockquote {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

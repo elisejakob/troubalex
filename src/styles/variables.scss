@@ -7,26 +7,39 @@
   // colors
   --color-text: #181818;
   --color-background: #eee;
+  --color-background-secondary: rgb(212, 230, 222);
+  // header + footer
+  --color-background-layout: rgb(85, 177, 171);
+  --color-text-layout: var(--color-text);
+  // details
   --color-hover: teal;
   --color-details: hotpink;
+  --color-details-light: rgb(242, 187, 215);
 
   // font sizes
   --root-size: 16px;
   --font-size-body: 1rem;
-  --font-size-lead: 1.4rem;
-  --font-size-mini: .8rem;
+  --font-size-lead: 1.6rem;
+  --font-size-header: .8rem;
+  --font-size-mini: .66rem;
   --font-size-h1: 2.4rem;
+  --font-size-h2: 1.8rem;
+  --font-size-h3: 1.4rem;
 
   // layout sizes
-  --size-width-p: 32rem;
-  --size-width-lead: 32em;
+  --max-width-page: 1440px;
+  --max-width-p: 32rem;
+  --max-width-lead: 32em;
 
   // spacing
-  --spacing-sitepadding-block: 1rem;
+  --spacing-sitepadding-block: 1.4rem;
   --spacing-sitepadding-inline: 1.4rem;
 
   // type details
   --letter-spacing: 0.04em;
+
+  // shape details
+  --border-radius-tag: 3px;
 
   // animation & transitions
   --transition-duration: .2s;
@@ -37,7 +50,19 @@
   :root {
     --root-size: 20px;
 
-    --spacing-sitepadding-block: 2rem;
+    --spacing-sitepadding-block: 3rem;
     --spacing-sitepadding-inline: 4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --spacing-sitepadding-inline: 10vw;
+  }
+}
+
+@media (min-width: 2100px) {
+  :root {
+    --spacing-sitepadding-inline: 20vw;
   }
 }

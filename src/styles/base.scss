@@ -50,11 +50,11 @@ a {
 }
 
 p {
-  margin: 0 auto 1rem;
-  max-width: var(--size-width-p);
+  margin: 0 0 1rem;
+  max-width: var(--max-width-p);
   &.lead {
     margin: 0;
     font-size: var(--font-size-lead);
-    max-width: var(--size-width-lead);
+    max-width: var(--max-width-lead);
   }
 }

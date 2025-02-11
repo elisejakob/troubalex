@@ -6,10 +6,10 @@
 
   // colors
   --color-text: #181818;
-  --color-background: #eee;
-  --color-background-secondary: rgb(212, 230, 222);
+  --color-background: #FFFDFA;
+  --color-background-secondary: #FDF4EA;
   // header + footer
-  --color-background-layout: rgb(85, 177, 171);
+  --color-background-layout: #84D1DC;
   --color-text-layout: var(--color-text);
   // details
   --color-hover: teal;
@@ -19,7 +19,7 @@
   // font sizes
   --root-size: 16px;
   --font-size-body: 1rem;
-  --font-size-lead: 1.6rem;
+  --font-size-lead: 1.4rem;
   --font-size-header: .8rem;
   --font-size-mini: .66rem;
   --font-size-h1: 2.4rem;
@@ -29,11 +29,12 @@
   // layout sizes
   --max-width-page: 1440px;
   --max-width-p: 32rem;
-  --max-width-lead: 32em;
+  --max-width-lead: 38em;
 
   // spacing
   --spacing-sitepadding-block: 1.4rem;
   --spacing-sitepadding-inline: 1.4rem;
+  --spacing-headerpadding: .6rem;
 
   // type details
   --letter-spacing: 0.04em;

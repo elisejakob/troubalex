@@ -1,6 +1,8 @@
 import { GetStaticProps } from "next";
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
+import { PostList } from "@/components/post/PostList";
+import { PageHeader } from "@/components/page/PageHeader";
 
 type HomeProps = {
   posts: { slug: string; title: string }[];
@@ -9,14 +11,9 @@ type HomeProps = {
 export default function Home({ posts }: HomeProps) {
   return (
     <main>
-      <h1>Home page</h1>
-      <ul>
-        {posts.slice(0, 6).map((post) => (
-          <li key={post.slug}>
-            <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <PageHeader title="Hello friend!" lead="I'm Alexandra. I am a woman of many talents but right now I am most useful at BRYTER where I shape product for lawyers. At lunch, I sit with the engineers, and I marvel at the designers but I don't get their jokes. This is my blog, a random collection of thoughts and contradictions." />
+      <PostList posts={posts.slice(0, 6)} />
+      <Link href="/posts">All posts &rarr;</Link>
     </main>
   );
 }

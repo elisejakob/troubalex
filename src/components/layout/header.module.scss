@@ -1,5 +1,5 @@
 .header {
-  padding: 1rem var(--spacing-sitepadding-inline);
+  padding: var(--spacing-headerpadding) var(--spacing-sitepadding-inline);
   display: flex;
   justify-content: space-between;
   background: var(--color-background-layout);

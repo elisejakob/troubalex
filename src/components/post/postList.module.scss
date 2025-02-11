@@ -1,0 +1,33 @@
+.postList {
+  display: block;
+  list-style: none;
+  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline) calc(var(--spacing-sitepadding-block)*4); 
+}
+
+.postItem a {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: .4rem;
+  margin-bottom: 2rem;
+}
+
+.meta {
+  grid-column: span 2;
+  font-family: var(--font-details);
+  font-size: var(--font-size-mini);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  margin-top: .36rem;
+}
+
+.title {
+  grid-column: 3 / -1;
+  font-weight: 600;
+  font-size: var(--font-size-h2);
+}
+
+.lead {
+  grid-column: 3 / -1;
+  opacity: .5;
+}

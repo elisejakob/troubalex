@@ -5,16 +5,16 @@
   --font-details: sans-serif;
 
   // colors
-  --color-text: #181818;
-  --color-background: #FFFDFA;
-  --color-background-secondary: #FDF4EA;
-  // header + footer
-  --color-background-layout: #84D1DC;
-  --color-text-layout: var(--color-text);
+  --color-white: #FFFDFA;
+  --color-forest: #276985;
+  --color-underdark: #17242B;
+  --color-leaf: #5bbcba; 
+  // colors in use
+  --color-text: var(--color-underdark);
+  --color-background: var(--color-white);
   // details
-  --color-hover: teal;
-  --color-details: hotpink;
-  --color-details-light: rgb(242, 187, 215);
+  --color-hover: var(--color-forest);
+  --color-details: var(--color-leaf);
 
   // font sizes
   --root-size: 16px;

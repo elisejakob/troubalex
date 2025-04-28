@@ -2,7 +2,7 @@
   // fonts
   --font-main: "Make Way", serif;
   --font-heading: "Make Way", serif;
-  --font-details: sans-serif;
+  --font-details: "Fragment Mono", monospace;
 
   // colors
   --color-white: #FFFDFA;
@@ -34,7 +34,7 @@
   // spacing
   --spacing-sitepadding-block: 1.4rem;
   --spacing-sitepadding-inline: 1.4rem;
-  --spacing-headerpadding: .6rem;
+  --spacing-headerpadding: 2rem;
 
   // type details
   --letter-spacing: 0.04em;
@@ -58,7 +58,7 @@
 
 @media (min-width: 1600px) {
   :root {
-    --spacing-sitepadding-inline: 10vw;
+    --spacing-sitepadding-inline: 12vw;
   }
 }
 

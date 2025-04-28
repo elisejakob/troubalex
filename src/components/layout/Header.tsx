@@ -4,8 +4,14 @@ import styles from "./header.module.scss";
 export const Header = () => {
   return (
     <header className={styles.header}>
+      <div className={styles.border}>
+        <img src="/assets/pixels/borders/shadow-forest/main.png" />
+        <img src="/assets/pixels/borders/shadow-forest/branch1.png" />
+        <img src="/assets/pixels/borders/shadow-forest/branch2.png" />
+        <img src="/assets/pixels/borders/shadow-forest/leaves.png" />
+      </div>
       <Link href="/">
-        <strong>Title</strong>
+        <img className="icon" src="/assets/pixels/icons/expression_chat.png" /><strong>Title</strong>
       </Link>
       <nav className={styles.menu}>
         <ul>

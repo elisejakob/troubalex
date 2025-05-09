@@ -1,10 +1,11 @@
 import Link from "next/link";
 import styles from "./postList.module.scss";
+import { Post } from "@/lib/posts";
 
-export const PostList = ({posts}: {posts: any}) => {
+export const PostList = ({posts}: {posts: Post[]}) => {
   return (
     <ul className={styles.postList}>
-      {posts.map((post: any) => (
+      {posts.map((post: Post) => (
         <li key={post.slug} className={styles.postItem}>
           <Link href={`/posts/${post.slug}`}>
             <div className={styles.meta}>

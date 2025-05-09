@@ -1,21 +1,23 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { getAllPosts, getPostBySlug, RelatedPost } from "@/lib/posts";
 import { PostHeader } from "@/components/post/PostHeader";
 import { PostContent } from "@/components/post/PostContent";
+import { RelatedPosts } from "@/components/post/RelatedPosts";
 
 type PostProps = {
   title: string;
   contentHtml: string;
   description?: string;
   date: string;
-  tags: string[];
+  relatedPosts: RelatedPost[];
 };
 
-export default function PostPage({ title, contentHtml, description, date }: PostProps) {
+export default function PostPage({ title, contentHtml, description, date, relatedPosts }: PostProps) {
   return (
     <main>
       <PostHeader title={title} lead={description} date={date} />
       <PostContent content={contentHtml} />
+      <RelatedPosts posts={relatedPosts} />
     </main>
   );
 }

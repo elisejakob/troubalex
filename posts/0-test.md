@@ -10,6 +10,9 @@ tags:
   - next.js
   - whimsy
   - this tag is very very long
+related:
+  - 2022-11-19-glitter-and-be-gay
+  - 2022-02-03-overwork
 ---
 
 One of the upsides of working in an international company is that you’re likely to have English colleagues. Not only do they have the best biscuit recommendations, but they also have a very special sense of humour. And sometimes, it rubs off.

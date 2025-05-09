@@ -14,10 +14,18 @@ export type PostMetadata = {
   images?: string[];
   tags?: string[];
   permalink?: string;
+  relatedPosts?: RelatedPost[];
 };
 
 export type Post = PostMetadata & {
   contentHtml: string;
+};
+
+export type RelatedPost = {
+  slug: string;
+  title: string;
+  description?: string;
+  date: string;
 };
 
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -87,6 +95,38 @@ export async function getPostBySlug(slug: string): Promise<Post> {
 
   const serializedDate = data.date instanceof Date ? data.date.toISOString() : data.date;
 
+  const allPosts = getAllPosts().filter((p) => p.slug !== slug); // exclude self
+
+  let relatedPosts: RelatedPost[] = [];
+
+  if (Array.isArray(data.related)) {
+    relatedPosts = data.related.map((relatedSlug) => {
+      const relatedPath = path.join(postsDirectory, `${relatedSlug}.md`);
+      if (fs.existsSync(relatedPath)) {
+        const relatedContent = fs.readFileSync(relatedPath, "utf8");
+        const { data: relatedData } = matter(relatedContent);
+
+        return {
+          slug: relatedSlug,
+          title: relatedData.title,
+          date: relatedData.date instanceof Date ? data.date.toISOString() : data.date,
+          description: relatedData.description || ""
+        };
+      }
+      return null;
+    }).filter(Boolean) as RelatedPost[];
+  }
+
+  const remaining = 3 - relatedPosts.length;
+  if (remaining > 0) {
+    const existingSlugs = new Set(relatedPosts.map((p) => p.slug));
+    const randomExtras = allPosts
+      .filter((p) => !existingSlugs.has(p.slug))
+      .sort(() => 0.5 - Math.random())
+      .slice(0, remaining);
+    relatedPosts = [...relatedPosts, ...randomExtras];
+  }
+
   return {
     slug,
     title: data.title,
@@ -97,6 +137,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     images: data.images || [],
     tags: data.tags || [],
     contentHtml,
-    permalink
+    permalink,
+    relatedPosts
   };
 }

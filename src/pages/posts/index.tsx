@@ -1,14 +1,9 @@
 import { GetStaticProps } from "next";
-import { getAllPosts } from "@/lib/posts";
-import Link from "next/link";
+import { getAllPosts, Post } from "@/lib/posts";
 import { PostList } from "@/components/post/PostList";
 import { PageHeader } from "@/components/page/PageHeader";
 
-type ArchiveProps = {
-  posts: { slug: string; title: string }[];
-};
-
-export default function Posts({ posts }: ArchiveProps) {
+export default function Posts({ posts }: { posts: Post[] }) {
   return (
     <main>
       <PageHeader title="All posts" />

@@ -109,7 +109,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
         return {
           slug: relatedSlug,
           title: relatedData.title,
-          date: relatedData.date instanceof Date ? data.date.toISOString() : data.date,
+          date: relatedData.date instanceof Date ? relatedData.date.toISOString() : relatedData.date,
           description: relatedData.description || ""
         };
       }

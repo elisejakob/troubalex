@@ -11,12 +11,10 @@ type PostProps = {
   tags: string[];
 };
 
-export default function PostPage({ title, contentHtml, description, date, tags }: PostProps) {
-  const formattedDate = new Date(date).toLocaleDateString();
-
+export default function PostPage({ title, contentHtml, description, date }: PostProps) {
   return (
     <main>
-      <PostHeader title={title} lead={description} date={date} tags={tags} />
+      <PostHeader title={title} lead={description} date={date} />
       <PostContent content={contentHtml} />
     </main>
   );

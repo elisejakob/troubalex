@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./postHeader.module.scss";
 
-export const PostHeader = ({title, lead, date, tags}: {title: string, lead?: string, date: string, tags: any}) => {
+export const PostHeader = ({title, lead, date}: {title: string, lead?: string, date: string}) => {
   return (
     <div className={styles.postHeader}>
       <h1>{ title }</h1>
@@ -15,13 +15,6 @@ export const PostHeader = ({title, lead, date, tags}: {title: string, lead?: str
             year: "numeric",
           })}
         </div>
-        {tags && tags.length > 0 && (
-          <ul className={styles.tags}>
-            {tags.map((tag: string) => (
-              <li key={tag} className={styles.tag}>{tag}</li>
-            ))}
-          </ul>
-        )}
       </div>
     </div>
   );

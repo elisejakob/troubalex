@@ -11,13 +11,10 @@ export const Header = () => {
         <img src="/assets/pixels/borders/shadow-forest/leaves.png" />
       </div>
       <Link href="/">
-        <img className="icon" src="/assets/pixels/icons/expression_chat.png" /><strong>Title</strong>
+        <span>🏮</span>&nbsp;<strong>The Whispering Hollow</strong>
       </Link>
       <nav className={styles.menu}>
         <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
           <li>
             <Link href="/posts">Archive</Link>
           </li>

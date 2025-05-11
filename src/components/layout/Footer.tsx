@@ -7,7 +7,10 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <section id="contact" className={styles.contact}>
         <h2>About Alexandra</h2>
-        <Sprite width="135px" height="96px" frames="8" speed="1s" url="url('/assets/pixels/monsters/forestmonster/Bush_Monster-Idle.png')" />
+        <div className={styles.monster}>
+          <Sprite width="135px" height="96px" frames="8" speed="1s" url="url('/assets/pixels/monsters/forestmonster/Bush_Monster-Idle.png')" />
+          <Sprite width="135px" height="96px" frames="18" speed="1s" url="url('/assets/pixels/monsters/forestmonster/Bush_Monster-Attack.png')" />
+        </div>
       </section>
     </footer>
   );

@@ -44,3 +44,19 @@
   bottom: -10px;
   right: var(--spacing-sitepadding-inline);
 }
+
+.monster {
+  > div {
+    &:nth-child(2) {
+      opacity: 0;
+    }
+  }
+  &:hover {
+    > div {
+      opacity: 0;
+      &:nth-child(2) {
+        opacity: 1;
+      }
+    }
+  }
+}

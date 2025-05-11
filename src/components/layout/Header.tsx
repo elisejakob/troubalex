@@ -5,13 +5,7 @@ import Sprite from "../general/Sprite";
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.border}>
-        <img src="/assets/pixels/borders/shadow-forest/main.png" />
-        <img src="/assets/pixels/borders/shadow-forest/branch1.png" />
-        <img src="/assets/pixels/borders/shadow-forest/branch2.png" />
-        <img src="/assets/pixels/borders/shadow-forest/leaves.png" />
-      </div>
-      <Link href="/">
+      <Link href="/" className={styles.title}>
         <span>🏮</span>&nbsp;<strong>The Whispering Hollow</strong>
       </Link>
       <nav className={styles.menu}>

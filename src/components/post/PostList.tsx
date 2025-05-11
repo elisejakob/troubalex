@@ -8,7 +8,7 @@ export const PostList = ({posts}: {posts: Post[]}) => {
       {posts.map((post: Post) => (
         <li key={post.slug} className={styles.postItem}>
           <Link href={`/posts/${post.slug}`}>
-            <div className={styles.meta}>
+            <div className="date">
               {new Date(post.date).toLocaleDateString("en-GB", {
                 day: "numeric",
                 month: "long",

@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -69,4 +71,13 @@ p {
   font-style: italic;
   text-decoration: none;
   font-size: var(--font-size-h3);
+}
+
+.date {
+  grid-column: span 2;
+  font-family: var(--font-details);
+  font-size: var(--font-size-header);
+  letter-spacing: var(--letter-spacing);
+  margin-top: .36rem;
+  opacity: .6;
 }

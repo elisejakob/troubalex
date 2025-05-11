@@ -31,6 +31,45 @@
   min-height: 40dvh;
 }
 
+.heading {
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: var(--spacing-sitepadding-block);
+
+  display: inline-flex;
+  align-items: center;
+  gap: .6em;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: var(--spacing-sitepadding-block);
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.postItem {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+  h3 {
+    font-size: var(--font-size-h3);
+    margin-bottom: .6rem;
+  }
+  p {
+    line-height: 1.4;
+    opacity: .6;
+  }
+}
+
 .house {
   position: absolute;
   bottom: -10px;

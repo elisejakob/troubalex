@@ -2,7 +2,7 @@ import styles from './icon.module.scss'
 
 export default function Icon({ type }: { type: string }) {
   return (
-    <div className={styles.icon}>
+    <span className={styles.icon}>
       {type === 'title' && 
         <img src="/assets/pixels/icons/basket.png" />
       }
@@ -15,6 +15,6 @@ export default function Icon({ type }: { type: string }) {
       {type === 'contact' && 
         <img src="/assets/pixels/icons/arrow_right.png" />
       }
-    </div>
+    </span>
   );
 }

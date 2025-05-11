@@ -7,7 +7,7 @@ export const Header = () => {
     <header className={styles.header}>
       <Link href="/" className={styles.title}>
         <Icon type="title" />
-        <strong>The Whispering Hollow</strong>
+        <span>The Whispering Hollow</span>
       </Link>
       <nav className={styles.menu}>
         <ul>

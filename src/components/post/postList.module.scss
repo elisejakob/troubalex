@@ -12,14 +12,6 @@
   margin-bottom: 2rem;
 }
 
-.meta {
-  grid-column: span 2;
-  font-family: var(--font-details);
-  font-size: var(--font-size-header);
-  letter-spacing: var(--letter-spacing);
-  margin-top: .36rem;
-}
-
 .title {
   grid-column: 3 / -1;
   font-weight: 600;

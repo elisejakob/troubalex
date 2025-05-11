@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./header.module.scss";
+import Sprite from "../general/Sprite";
 
 export const Header = () => {
   return (
@@ -26,6 +27,7 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
+      <Sprite width="80px" height="64px" frames="7" speed=".8s" url="url('/assets/pixels/monsters/mushroom/Mushroom-Idle.png')" />
     </header>
   );
 };

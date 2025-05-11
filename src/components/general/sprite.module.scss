@@ -1,0 +1,19 @@
+.sprite {
+  width: var(--width);
+  height: var(--height);
+  background: var(--url) 0 0 no-repeat;
+  background-size: calc(var(--width) * var(--frames)) var(--height);
+  animation: play var(--speed) steps(var(--frames)) infinite;
+
+  position: absolute;
+  bottom: 0;
+  right: var(--spacing-sitepadding-inline);
+}
+@keyframes play {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: calc(var(--width) * var(--frames) * -1) 0;
+  }
+}

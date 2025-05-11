@@ -4,7 +4,7 @@ import { Post, RelatedPost } from "@/lib/posts";
 
 export const RelatedPosts = ({ posts }: { posts: RelatedPost[] }) => {
   return (
-    <div>
+    <div className={styles.relatedWrapper}>
       <div className={styles.skyline}>
         <div className={styles.clouds}></div>
         <div className={styles.trees}></div>

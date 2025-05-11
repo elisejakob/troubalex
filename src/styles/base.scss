@@ -51,9 +51,11 @@ a {
 
 p {
   margin: 0 0 1rem;
+  font-size: var(--font-size-body);
   max-width: var(--max-width-p);
   &.lead {
     margin: 0;
+    line-height: 1.36;
     font-size: var(--font-size-lead);
     max-width: var(--max-width-lead);
   }

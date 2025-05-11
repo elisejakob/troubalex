@@ -1,42 +1,18 @@
-.footer {
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-}
-
-.skyline {
-  position: relative;
-
-  .clouds, .trees {
-    background-size: auto 100%;
-    background-repeat: repeat-x;
-  }
-
-  .clouds {
-    height: 160px;
-    background-image: url('/assets/pixels/skyline/clouds.png');
-  }
-  .trees {
-    height: 300px;
-    background-image: url('/assets/pixels/skyline/trees.png');
-    margin-top: -100px;
-    margin-bottom: -160px;
-  }
-}
-
-.related {
-  position: relative;
-  background: var(--color-forest);
-  color: var(--color-white);
-  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline);
-  min-height: 40dvh;
-}
-
 .contact {
   position: relative;
   background: var(--color-underdark);
   color: var(--color-white);
   padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline);
   min-height: 40dvh;
+
+  h1 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    opacity: .6;
+  }
 }
 
 .house {
@@ -47,6 +23,9 @@
 
 .monster {
   > div {
+    position: absolute;
+    bottom: 0;
+    right: var(--spacing-sitepadding-inline);
     &:nth-child(2) {
       opacity: 0;
     }

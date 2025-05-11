@@ -6,12 +6,14 @@
 
   // colors
   --color-white: #FFFDFA;
+  --color-birch: #fde9d6;
   --color-forest: #276985;
   --color-underdark: #17242B;
   --color-leaf: #5bbcba; 
   // colors in use
   --color-text: var(--color-underdark);
   --color-background: var(--color-white);
+  --color-background-secondary: var(--color-birch);
   // details
   --color-hover: var(--color-forest);
   --color-details: var(--color-leaf);
@@ -34,7 +36,7 @@
   // spacing
   --spacing-sitepadding-block: 1.4rem;
   --spacing-sitepadding-inline: 1.4rem;
-  --spacing-headerpadding: 2rem;
+  --spacing-headerpadding: .6rem;
 
   // type details
   --letter-spacing: 0.04em;

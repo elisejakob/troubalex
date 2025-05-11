@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/page/PageHeader";
 export default function Posts({ posts }: { posts: Post[] }) {
   return (
     <main>
-      <PageHeader title="All posts" />
+      <PageHeader title="Archive" />
       <PostList posts={posts} />
     </main>
   );

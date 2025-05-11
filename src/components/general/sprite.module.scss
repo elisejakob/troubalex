@@ -4,10 +4,8 @@
   background: var(--url) 0 0 no-repeat;
   background-size: calc(var(--width) * var(--frames)) var(--height);
   animation: play var(--speed) steps(var(--frames)) infinite;
-
-  position: absolute;
-  bottom: 0;
-  right: var(--spacing-sitepadding-inline);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 @keyframes play {
   from {

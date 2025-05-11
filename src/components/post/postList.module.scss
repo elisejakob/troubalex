@@ -1,7 +1,7 @@
 .postList {
   display: block;
   list-style: none;
-  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline) calc(var(--spacing-sitepadding-block)*4); 
+  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline) calc(var(--spacing-sitepadding-block)*2); 
 }
 
 .postItem a {
@@ -16,7 +16,6 @@
   grid-column: span 2;
   font-family: var(--font-details);
   font-size: var(--font-size-header);
-  text-transform: uppercase;
   letter-spacing: var(--letter-spacing);
   margin-top: .36rem;
 }
@@ -29,5 +28,5 @@
 
 .lead {
   grid-column: 3 / -1;
-  opacity: .5;
+  opacity: .6;
 }

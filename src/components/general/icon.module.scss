@@ -1,4 +1,10 @@
 .icon {
-  width: 1.4em;
-  display: inline-block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: inline-flex;
+  align-items: center;
+
+  img {
+    width: 1em;
+  }
 }

@@ -1,7 +1,19 @@
 .pageHeader {
-  padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline);
+  position: relative;
+  padding: calc(var(--spacing-sitepadding-block)*1.6) var(--spacing-sitepadding-inline);
   background: var(--color-background-secondary);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.title {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.friend {
+  position: absolute;
+  bottom: 0;
+  right: var(--spacing-sitepadding-inline);
 }

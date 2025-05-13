@@ -4,8 +4,10 @@ import styles from "./postHeader.module.scss";
 export const PostHeader = ({title, lead, date}: {title: string, lead?: string, date: string}) => {
   return (
     <div className={styles.postHeader}>
-      <h1>{ title }</h1>
-      {lead && <p className="lead">{ lead }</p>}
+      <div className={styles.text}>
+        <h1>{ title }</h1>
+        {lead && <p className="lead">{ lead }</p>}
+      </div>
       <div className={styles.meta}>
         <div className={styles.date}>
           By Alexandra Leisse,{" "}

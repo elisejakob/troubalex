@@ -1,19 +1,18 @@
 .postHeader {
-  padding: calc(var(--spacing-sitepadding-block)*1.4) var(--spacing-sitepadding-inline) var(--spacing-sitepadding-block);
   background: var(--color-background-secondary);
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+}
+
+.text {
+  padding: calc(var(--spacing-sitepadding-block)*1.4) var(--spacing-sitepadding-inline) var(--spacing-sitepadding-block);
 }
 
 .meta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  background: rgba(200, 100, 50, .1);
   font-family: var(--font-details);
   font-size: var(--font-size-header);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing);
+  padding: var(--spacing-headerpadding) var(--spacing-sitepadding-inline);
 }
 
 .tags {

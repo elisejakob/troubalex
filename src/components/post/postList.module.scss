@@ -7,18 +7,16 @@
 .postItem a {
   text-decoration: none;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: .4rem;
+  grid-template-columns: 9rem 1fr;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .title {
-  grid-column: 3 / -1;
   font-weight: 600;
   font-size: var(--font-size-h2);
 }
 
 .lead {
-  grid-column: 3 / -1;
   opacity: .6;
 }

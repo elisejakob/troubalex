@@ -15,8 +15,10 @@ export const PostList = ({posts}: {posts: Post[]}) => {
                 year: "numeric",
               })}
             </div>
-            <h2 className={styles.title}>{post.title}</h2>
-            <p className={styles.lead}>{post.description}</p>
+            <div className={styles.text}>
+              <h2 className={styles.title}>{post.title}</h2>
+              <p className={styles.lead}>{post.description}</p>
+            </div>
           </Link>
         </li>
       ))}

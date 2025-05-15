@@ -24,7 +24,7 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/#contact">
+            <Link href="#contact">
               <Icon type="contact" />
               <span>Contact</span>
             </Link>

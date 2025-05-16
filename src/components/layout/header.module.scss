@@ -8,7 +8,8 @@
   font-family: var(--font-details);
   font-size: var(--font-size-header);
   letter-spacing: var(--letter-spacing);
-  background: rgb(250, 141, 87);
+  background: var(--color-underdark);
+  color: var(--color-background);
   a {
     text-decoration: none;
     display: inline-flex;
@@ -18,7 +19,6 @@
 }
 
 .title {
-  background: rgb(250, 141, 87);
   padding: var(--spacing-headerpadding) var(--spacing-sitepadding-inline);
 }
 
@@ -33,17 +33,10 @@
     display: inline-block;
     a {
       padding: var(--spacing-headerpadding) 2rem;
-      background: #A9D9D1;
-    }
-    &:nth-child(2) {
-      a {
-        background: #ffbf87;
-      }
     }
     &:last-child {
       a {
         padding-right: var(--spacing-sitepadding-inline);
-        background: #BBA1CB;
       }
     }
   }

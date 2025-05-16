@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import { getAllPosts, Post } from "@/lib/posts";
 import { PostList } from "@/components/post/PostList";
-import { PageHeader } from "@/components/page/PageHeader";
+import { PageHeader } from "@/components/general/PageHeader";
 
 export default function Posts({ posts }: { posts: Post[] }) {
   return (

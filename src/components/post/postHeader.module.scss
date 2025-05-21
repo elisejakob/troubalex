@@ -1,11 +1,15 @@
 .postHeader {
-  background: var(--color-background-secondary);
+  background: var(--background-gradient-header);
   display: flex;
   flex-direction: column;
 }
 
 .text {
   padding: calc(var(--spacing-sitepadding-block)*1.4) var(--spacing-sitepadding-inline) var(--spacing-sitepadding-block);
+}
+
+.title {
+  margin-bottom: 1.6rem;
 }
 
 .meta {

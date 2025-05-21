@@ -31,16 +31,6 @@
   min-height: 40dvh;
 }
 
-.heading {
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: var(--spacing-sitepadding-block);
-
-  display: inline-flex;
-  align-items: center;
-  gap: .6em;
-}
-
 .posts {
   display: grid;
   grid-template-columns: 1fr;

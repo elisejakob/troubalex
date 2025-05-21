@@ -4,41 +4,30 @@
   left: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
   font-family: var(--font-details);
   font-size: var(--font-size-header);
   letter-spacing: var(--letter-spacing);
   background: var(--color-underdark);
   color: var(--color-background);
+  padding: var(--spacing-headerpadding) var(--spacing-sitepadding-inline);
   a {
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: .6em;
   }
 }
 
 .title {
-  padding: var(--spacing-headerpadding) var(--spacing-sitepadding-inline);
+  width: 50%;
 }
 
 .menu {
+  width: 50%;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-  }
-  li {
-    display: inline-block;
-    a {
-      padding: var(--spacing-headerpadding) 2rem;
-    }
-    &:last-child {
-      a {
-        padding-right: var(--spacing-sitepadding-inline);
-      }
-    }
+    justify-content: space-between;
+    gap: 2rem;
   }
 }
 

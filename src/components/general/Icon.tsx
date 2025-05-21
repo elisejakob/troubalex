@@ -2,7 +2,7 @@ import styles from './icon.module.scss'
 
 export default function Icon({ type }: { type: string }) {
   return (
-    <span className={styles.icon}>
+    <span className={`icon ${styles.icon}`}>
       {type === 'title' && 
         <img src="/assets/pixels/icons/basket.png" />
       }

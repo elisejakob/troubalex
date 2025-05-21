@@ -5,7 +5,7 @@ export const PostHeader = ({title, lead, date}: {title: string, lead?: string, d
   return (
     <div className={styles.postHeader}>
       <div className={styles.text}>
-        <h1>{ title }</h1>
+        <h1 className={styles.title}>{ title }</h1>
         {lead && <p className="lead">{ lead }</p>}
       </div>
       <div className={styles.meta}>

@@ -22,6 +22,17 @@ body {
   font-family: var(--font-main);
   line-height: 1.5;
   transition: background .3s ease-out;
+
+  &:has(#skyline) {
+    &:before {
+      content: "";
+      position: fixed;
+      background: var(--background-gradient-body);
+      width: 100dvw;
+      height: 100dvh;
+      z-index: -1;
+    }
+  }
 }
 
 main {
@@ -59,6 +70,26 @@ p {
     line-height: 1.36;
     font-size: var(--font-size-lead);
     max-width: var(--max-width-lead);
+  }
+}
+
+.iconHeading,
+.iconLink {
+  font-family: var(--font-details);
+  font-size: var(--font-size-header);
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: .6em;
+}
+.iconHeading {
+  font-family: var(--font-main);
+  font-size: var(--font-size-h3);
+  font-style: italic;
+  margin-bottom: var(--spacing-sitepadding-block);
+
+  .icon {
+    font-size: var(--font-size-header);
   }
 }
 

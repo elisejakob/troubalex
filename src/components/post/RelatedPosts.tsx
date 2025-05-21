@@ -6,12 +6,12 @@ import Icon from "../general/Icon";
 export const RelatedPosts = ({ posts }: { posts: RelatedPost[] }) => {
   return (
     <div className={styles.relatedWrapper}>
-      <div className={styles.skyline}>
+      <div id="skyline" className={styles.skyline}>
         <div className={styles.clouds}></div>
         <div className={styles.trees}></div>
       </div>
       <section className={styles.related}>
-        <h2 className={styles.heading}>
+        <h2 className="iconHeading">
           <Icon type="archive" />
           <span>Want to keep reading?</span>
         </h2>

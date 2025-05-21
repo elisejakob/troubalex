@@ -1,12 +1,36 @@
-.contact {
+.footer {
   position: relative;
   background: var(--color-underdark);
+  padding-bottom: calc(var(--spacing-sitepadding-block)*2);
+}
+
+.contact {
   color: var(--color-white);
   padding: var(--spacing-sitepadding-block) var(--spacing-sitepadding-inline);
   min-height: 40dvh;
 
   p {
     opacity: .6;
+    margin-bottom: var(--spacing-sitepadding-block);
+  }
+}
+
+.contactItems {
+  li {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+
+    span {
+      opacity: .5;
+    }
+
+    a {
+      grid-column: 2;
+    }
+
+    &.email {
+      margin-bottom: 1rem;
+    }
   }
 }
 

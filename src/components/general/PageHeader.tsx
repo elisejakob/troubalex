@@ -5,8 +5,8 @@ export const PageHeader = ({title, lead, page}: {title: string, lead?: string, p
   return (
     <div className={`${styles.pageHeader} ${page && styles[page]}`}>
       {page === "index" && <div className={styles.branches}>
-        <img className={styles.leftBranch} src="/assets/pixels/borders/shadow-forest/branch2.png" />
-        <img className={styles.rightBranch} src="/assets/pixels/borders/shadow-forest/main.png" />
+        <img className={styles.smallBranch} src="/assets/pixels/borders/shadow-forest/branch2.png" />
+        <img className={styles.bigBranch} src="/assets/pixels/borders/shadow-forest/main.png" />
       </div>}
       <h1 className={styles.title}>{ title }</h1>
       {lead && <p className={`lead ${styles.lead}`}>{ lead }</p>}

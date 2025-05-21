@@ -4,6 +4,7 @@
   left: 0;
   z-index: 1000;
   display: flex;
+  flex-wrap: wrap;
   font-family: var(--font-details);
   font-size: var(--font-size-header);
   letter-spacing: var(--letter-spacing);
@@ -31,16 +32,17 @@
   }
 }
 
-.border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  /*background-size: auto 100%;
-  background-repeat: repeat-x;
-  height: 160px;
-  width: 100%;
-  background-image: url('/assets/pixels/borders/shadow-forest/main.png');*/
-  display: flex;
-  align-items: flex-start;
+@media (max-width: 800px) {
+  .header {
+    padding: 0;
+  }
+  .title,
+  .menu {
+    width: 100%;
+    padding: var(--spacing-headerpadding) var(--spacing-sitepadding-inline);
+  }
+  .menu {
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+  }
 }

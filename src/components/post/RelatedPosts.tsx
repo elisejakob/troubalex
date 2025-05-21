@@ -20,7 +20,7 @@ export const RelatedPosts = ({ posts }: { posts: RelatedPost[] }) => {
             <article key={post.slug} className={styles.postItem}>
               <Link href={`/posts/${post.slug}`}>
                 <h3 className={styles.title}>{post.title}</h3>
-                <p className={styles.lead}>{post.description}</p>
+                <p className={styles.lead}>{post.minidescription ?? post.description}</p>
                 <div className="date">
                   {new Date(post.date).toLocaleDateString("en-GB", {
                     day: "numeric",

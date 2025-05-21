@@ -15,6 +15,9 @@ export default function Icon({ type }: { type: string }) {
       {type === 'contact' && 
         <img src="/assets/pixels/icons/arrow_right.png" />
       }
+      {type === 'arrowRight' && 
+        <img src="/assets/pixels/icons/arrow_right.png" />
+      }
     </span>
   );
 }

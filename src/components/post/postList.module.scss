@@ -13,16 +13,44 @@
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    gap: .5rem;
+    gap: .6rem;
+  }
+
+  &:hover {
+    color: inherit;
+
+    .title {
+      text-decoration: underline;
+      text-underline-offset: .1em;
+      text-decoration-thickness: 0.06em;
+
+      span {
+        transform: translate(0, -40%);
+        opacity: 1;
+      }
+    }
   }
 }
 
 .title {
+  display: inline-block;
   font-weight: 600;
   font-size: var(--font-size-h2);
-  margin-bottom: .5rem;
+  margin-bottom: .6rem;
+  position: relative;
+
+  span {
+    font-size: var(--font-size-header);
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translate(-20%, -40%);
+    width: 1em;
+    opacity: 0;
+    transition: all .2s ease;
+  }
 }
 
-.lead {
-  opacity: .6;
+.date {
+  line-height: calc(var(--font-size-h2)* .8);
 }

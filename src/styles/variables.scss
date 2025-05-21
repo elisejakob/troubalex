@@ -22,16 +22,15 @@
   --color-details: var(--color-leaf);
 
   // font sizes
-  --root-size: 18px;
+  --root-size: 16px;
   --font-size-body: 1rem;
-  --font-size-lead: 1.4rem;
+  --font-size-lead: 1.2rem;
   --font-size-header: .8rem;
   --font-size-mini: .66rem;
-  --font-size-max: 3.6rem;
-  --font-size-h1: 2.8rem;
-  --font-size-h2: 1.8rem;
-  --font-size-h3: 1.4rem;
-  --font-size-quote: 1.6rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.6rem;
+  --font-size-h3: 1.2rem;
+  --font-size-quote: 1.4rem;
 
   // layout sizes
   --max-width-page: 1440px;
@@ -41,7 +40,7 @@
   // spacing
   --spacing-sitepadding-block: 2.8rem;
   --spacing-sitepadding-inline: 1.4rem;
-  --spacing-headerpadding: .6rem;
+  --spacing-headerpadding: .4rem;
 
   // type details
   --letter-spacing: 0.04em;
@@ -56,10 +55,18 @@
 
 @media (min-width: 800px) {
   :root {
-    --root-size: 20px;
+    --root-size: 18px;
+    --font-size-lead: 1.4rem;
+    --font-size-header: .8rem;
+    --font-size-mini: .66rem;
+    --font-size-h1: 2.8rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.4rem;
+    --font-size-quote: 1.6rem;
 
     --spacing-sitepadding-block: 3.2rem;
     --spacing-sitepadding-inline: 4rem;
+    --spacing-headerpadding: .8rem;
   }
 }
 

@@ -8,6 +8,7 @@ export type PostMetadata = {
   slug: string;
   title: string;
   description?: string;
+  minidescription?: string;
   date: string;
   draft?: boolean;
   toc?: boolean;
@@ -25,6 +26,7 @@ export type RelatedPost = {
   slug: string;
   title: string;
   description?: string;
+  minidescription?: string;
   date: string;
 };
 
@@ -110,7 +112,8 @@ export async function getPostBySlug(slug: string): Promise<Post> {
           slug: relatedSlug,
           title: relatedData.title,
           date: relatedData.date instanceof Date ? relatedData.date.toISOString() : relatedData.date,
-          description: relatedData.description || ""
+          description: relatedData.description || "",
+          minidescription: relatedData.minidescription || ""
         };
       }
       return null;
@@ -131,6 +134,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     slug,
     title: data.title,
     description: data.description || "",
+    minidescription: data.minidescription || "",
     date: serializedDate,
     draft: data.draft || false,
     toc: data.toc || false,

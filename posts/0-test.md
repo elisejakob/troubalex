@@ -2,6 +2,7 @@
 title: Elise's secret test article
 permalink: /testing-testing
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+minidescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 date: 2025-11-29
 social_image: /img/lessons-opera.jpg
 tags:

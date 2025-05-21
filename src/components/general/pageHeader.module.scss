@@ -19,7 +19,6 @@
 }
 
 .title {
-  font-size: var(--font-size-max);
   font-style: italic;
   font-weight: 400;
 }
@@ -30,15 +29,25 @@
   right: var(--spacing-sitepadding-inline);
 }
 
-.leftBranch {
+.smallBranch {
   position: absolute;
   top: -3px;
   left: 0;
 }
 
-.rightBranch {
+.bigBranch {
   position: absolute;
   top: -3px;
   right: -140px;
   transform: scaleX(-1);
+}
+
+@media (max-width: 800px) {
+  .smallBranch {
+    display: none;
+  }
+  .bigBranch {
+    transform: none;
+    left: -140px;
+  }
 }

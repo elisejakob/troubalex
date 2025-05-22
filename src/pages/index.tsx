@@ -3,6 +3,8 @@ import { getAllPosts, Post } from "@/lib/posts";
 import Link from "next/link";
 import { PostList } from "@/components/post/PostList";
 import { PageHeader } from "@/components/general/PageHeader";
+import { HouseSection } from "@/components/layout/HouseSection";
+import Icon from "@/components/general/Icon";
 
 export default function Home({ posts }: { posts: Post[] }) {
   return (
@@ -13,7 +15,13 @@ export default function Home({ posts }: { posts: Post[] }) {
         page="index"
       />
       <PostList posts={posts.slice(0, 6)} />
-      <Link href="/posts" className="pagelink">All posts &rarr;</Link>
+      <div className="allPostsLink">
+        <Link href="/posts">
+          Enter the archive
+          <Icon type="arrowRight" />
+        </Link>
+      </div>
+      <HouseSection />
     </main>
   );
 }

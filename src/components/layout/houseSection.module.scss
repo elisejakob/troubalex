@@ -1,0 +1,36 @@
+.houseSection {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  position: relative;
+}
+
+.skyline {
+  position: relative;
+
+  .clouds, .trees {
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+  }
+
+  .clouds {
+    height: 160px;
+    background-image: url('/assets/pixels/skyline/clouds.png');
+  }
+  .trees {
+    height: 300px;
+    background-image: url('/assets/pixels/skyline/trees.png');
+    margin-top: -100px;
+    margin-bottom: -160px;
+  }
+}
+
+.children {
+  background: var(--color-forest);
+  min-height: 120px;
+}
+
+.house {
+  position: absolute;
+  bottom: -10px;
+  right: var(--spacing-sitepadding-inline);
+}

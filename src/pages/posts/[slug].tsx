@@ -3,6 +3,7 @@ import { getAllPosts, getPostBySlug, RelatedPost } from "@/lib/posts";
 import { PostHeader } from "@/components/post/PostHeader";
 import { PostContent } from "@/components/post/PostContent";
 import { RelatedPosts } from "@/components/post/RelatedPosts";
+import { HouseSection } from "@/components/layout/HouseSection";
 
 type PostProps = {
   title: string;
@@ -17,7 +18,7 @@ export default function PostPage({ title, contentHtml, description, date, relate
     <main>
       <PostHeader title={title} lead={description} date={date} />
       <PostContent content={contentHtml} />
-      <RelatedPosts posts={relatedPosts} />
+      <HouseSection><RelatedPosts posts={relatedPosts} /></HouseSection>
     </main>
   );
 }

@@ -26,6 +26,8 @@
 
     a {
       grid-column: 2;
+      display: inline-block;
+      width: fit-content;
     }
 
     &.email {

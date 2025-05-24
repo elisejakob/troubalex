@@ -10,6 +10,9 @@ tags:
   - til
   - book notes
   - product design
+related:
+  - 2020-04-20-users-journey2.md
+  - 2020-04-23-users-journey3.md
 ---
 
 ## Introduction

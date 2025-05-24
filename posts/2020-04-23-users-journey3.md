@@ -10,6 +10,9 @@ tags:
   - til
   - book notes
   - product design
+related:
+  - 2020-04-15-users-journey1.md
+  - 2020-04-20-users-journey2.md
 ---
 _[Read the first part here](/users-journey-donna-lichaw-part-1) and [the second part here](/users-journey-donna-lichaw-part-2)_
 

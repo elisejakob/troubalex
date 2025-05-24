@@ -1,8 +1,0 @@
----
-title: 'Cuteness!'
-date: 2008-12-11
-draft: false
-tags: ['community', 'Qt', 'Qt']
----
-
-Where did the last weeks go? They seem to have passed me unnoticed behind my back... Exciting things have happened. I spare you the details of the ups and downs I've been through like the nerve-wracking waiting for emails and simply pull out the most important news: I joined [Qt Software](http://trolltech.com/)'s marketing team as Web Community Manager three weeks ago. Being in dark and cold Oslo does need some adaptation but in reward I got really nice colleagues and free access to a wii and a pinball machine. And it actually snowed today! I will work on increasing the buzz around Qt and FOSS over the web and engage with the communities on the web around us to make them more visible and serve them with fresh news and content. To reach out to as many community members as possible I intend to concentrate on - surpise! - social media. For the beginning, I put some work into the [OSS showcase](http://trolltech.com/qt-in-use#oss) on our _Qt in Use_ section to promote OpenSource projects using Qt. There is more to come and if you ever stumble upon anything interesting, I might have missed - you know, my day only has 24 hours, too - go ahead and let me know and send me an email to _firstname dot lastname at trolltech dot com_. And I mean **anything**! Oh, and I will definetely go on putting time and work into KDE.

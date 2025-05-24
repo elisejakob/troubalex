@@ -11,7 +11,7 @@ export const Footer = () => {
           <Icon type="about" />
           <span>About Alexandra</span>
         </h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>I’m the CPO and co-founder of Alfred, longtime product thinker, and curious builder. I’ve shaped products at startups and scale-ups, always drawn to the messy middle where ideas turn into something real (and hopefully a little magical).</p>
         <h2 className="iconHeading">
           <Icon type="contact" />
           <span>Get in touch</span>

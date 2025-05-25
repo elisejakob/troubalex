@@ -1,14 +1,13 @@
 ---
 title: Glitter, and be gay
 permalink: /posts/glitter-and-be-gay/
-description: 'Experimenting with CSS variables and Javascript'
+description: "To figure out how to use CSS variables, I built a delightfully silly demo with colors and a lot of glitter. I dedicated it to the aria that I probably cursed about the most."
+minidescription: 'Experimenting with CSS variables and Javascript'
 date: 2022-11-19
 social_image: /img/glitter-and-be-gay-small.jpeg
 tags:
   - tutorial
 ---
-
-_I originally posted this article on Medium in June 2017, and just now remembered that I had written it. It's as good a reason as any to bring it back to my own blog._
 
 After attending [CSSconf EU](https://2017.cssconf.eu/), I started to think about what I could do with CSS variables to get the hang of it. Why not change the background color of a page once a visitor presses a key on their keyboard? [Take a look at the demo to see how it turned out.](http://troubalex.github.io/sparkles)
 
@@ -293,3 +292,5 @@ Resources
 *   [Una’s blog on locally scoped CSS variables](https://una.im/local-css-vars/#💁)
 *   [Wes Bos’ keycode site](http://keycode.info/)
 *   [“Glitter and be gay” on YouTube](https://youtu.be/0yk9YZfqay0)
+
+_I originally posted this article on Medium in June 2017, and just now remembered that I had written it. It's as good a reason as any to bring it back to my own blog._

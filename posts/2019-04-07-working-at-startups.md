@@ -1,6 +1,7 @@
 ---
 title: "Working at an Early-Stage Startup"
-description: Should you apply for a job at an early stage startup? Maybe. These are my pros and cons.
+description: "Startup job postings make it sound like you'll be changing the world by Tuesday. The reality is messier, lonelier, and far more uncertain than any job description will tell you."
+minidescription: "Should you apply for a job at an early stage startup? It depends."
 date: 2019-04-07
 draft: false
 toc: false
@@ -8,7 +9,7 @@ tags:
   - startups
 ---
 
-I get asked on a regular basis if it's a good idea to apply for a job at an early stage startup. As usual, the answer is "it depends". There are clear pros and cons, in my opinion.
+I get the question a lot if it's a good idea to apply for a job at an early stage startup. The answer is almost always "it depends". There are clear pros and cons, in my opinion.
 
 ## Pros
 

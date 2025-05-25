@@ -1,7 +1,7 @@
 ---
 title: The User’s Journey by Donna Lichaw – Part 2
 url: users-journey-donna-lichaw-part-2
-description: I took notes while reading “The User’s Journey” by Donna Lichaw. It’s a great book!
+description: I took notes while reading “The User’s Journey” by Donna Lichaw.
 date: 2020-04-20
 draft: false
 toc: true

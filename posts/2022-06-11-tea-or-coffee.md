@@ -29,7 +29,9 @@ It stems from that one time we had just started dating and were hanging out in m
 
 We probably went back and forth for a few more rounds until the water boiled, and I could pour one half of it into a teapot and the other half into a French press. It was the first of many conversations of this kind.
 
-I was utterly confused by this dynamic until I learned about ask and guess cultures from [Katherine Wu's presentation in 2014](https://youtu.be/Fi9uBYIbNFc).
+I was utterly confused by this dynamic until I learned about ask and guess cultures from Katharine Wu's presentation in 2014.
+
+https://youtu.be/Fi9uBYIbNFc
 
 ## Germans ask, Norwegians guess
 

@@ -1,6 +1,7 @@
 ---
 title: Deep Work by Cal Newport
-description: 'Reading notes and personal take-aways from "Deep Work": myths were busted, suspicions confirmed, and feelings validated.'
+description: "I thought Cal Newport's 'Deep Work' would be another productivity hack book. Turns out it's about something much harder – being deliberate about what you focus on in the first place, and defending the time you need to do it."
+minidescription: 'Reading notes and personal take-aways from "Deep Work"'
 date: 2021-04-18
 permalink: /posts/notes-on-deep-work-cal-newport/
 social_image: /img/deep-work.jpeg
@@ -11,14 +12,13 @@ tags:
   - time management
 ---
 
-Today I finished Cal Newport’s “Deep Work”. It came recommended by [my friend Eva](https://includejs.dev/) who may or may not have heard about it from our [common buddy Elisabeth](https://elisabethirgens.github.io/notes/2021/03/deep-work/). It’s a great book, and maybe you should read it too.
-
-<img src="https://www.norli.no/media/catalog/product/9/7/9780349411903_1.jpg">
+Today I finished Cal Newport’s “Deep Work”. It came recommended by [my friend Eva](https://includejs.dev/) who may or may not have heard about it from our [shared friend Elisabeth](https://elisabethirgens.github.io/notes/2021/03/deep-work/). It’s a good book, and maybe you should read it too.
 
 I am not into books on productivity hacks, because they never solve the problem of mediocre productivity but try to give advice on how to cram _even more_ into any given day. I have extensive experience with that approach, and it’s not for me.
 
 In this case, I got interested because Eva had started to implement a few tactics outlined in the book, and they felt like they might be useful for my woes.
 
+![Generated image of the book lying on a coffee table](/img/newport-deep-work.png)
 So here it goes.
 
 ## Main Take-aways

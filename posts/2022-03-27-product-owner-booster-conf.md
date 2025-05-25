@@ -1,7 +1,7 @@
 ---
 title: Product Owner is not a job
 permalink: /posts/product-owner-booster-conference/
-description: 'The fact that Product Owner is still used as a job title shows at best an immature product culture, and at worst a fundamental misunderstanding of modern product development. A rant.'
+description: 'Nothing says ‘we don’t get product’ like proudly hiring a Product Owner. A rant.'
 date: 2022-03-26
 social_image: /img/booster2022-thumb.png
 tags:

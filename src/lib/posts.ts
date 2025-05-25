@@ -62,9 +62,9 @@ export function getAllPosts(): PostMetadata[] {
 
 
 // detect vimeo/twitter and create embeds
-const vimeoRegex = /https:\/\/vimeo.com\/(\d+)/;
-const youtubeRegex = /https?:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]+)/;
-const twitterRegex = /https:\/\/twitter.com\/[a-zA-Z0-9_]+\/status\/(\d+)/;
+const vimeoRegex = /https:\/\/vimeo.com\/(\d+)(?=\n|$)/;
+const youtubeRegex = /https?:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]+)(?=\n|$)/;
+const twitterRegex = /https:\/\/twitter.com\/[a-zA-Z0-9_]+\/status\/(\d+)(?=\n|$)/;
 
 function processEmbeds(content: string) {
   // vimeo

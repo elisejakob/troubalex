@@ -3,7 +3,7 @@ title: The User’s Journey by Donna Lichaw – Part 3
 url: users-journey-donna-lichaw-part-3
 description: I took notes while reading “The User’s Journey” by Donna Lichaw.
 date: 2020-04-23
-draft: false
+draft: true
 toc: true
 images:
 tags:

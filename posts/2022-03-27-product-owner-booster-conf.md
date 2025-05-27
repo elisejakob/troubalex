@@ -12,9 +12,10 @@ tags:
   - rant
 ---
 
+[This talk](https://2022.boosterconf.no/talk/151-product-owner-is-not-a-job/) has been years in the making. You could say it’s the sequel to my [“Developers, start designing!” talk.](https://vimeo.com/209550722) When I was looking around for a new job last autumn, I had the “pleasure” to read enough job ads to become irritated.
+
 https://vimeo.com/692591029
 
-_[This talk](https://2022.boosterconf.no/talk/151-product-owner-is-not-a-job/) has been years in the making. You could say it’s the sequel to my [“Developers, start designing!” talk.](https://vimeo.com/209550722) When I was looking around for a new job last autumn, I had the “pleasure” to read enough job ads to become irritated._
 
 ## What is a Product Owner?
 

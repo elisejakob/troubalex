@@ -8,11 +8,11 @@
 .posts {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3rem;
   padding: var(--spacing-sitepadding-block) 0;
 
   @media (min-width: 900px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 2fr) 1fr;
   }
 }
 
